@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { GoVerified } from 'react-icons/go';
+//import { GoVerified } from 'react-icons/go';
 import axios from 'axios';
 
 import VideoCard from '../../components/VideoCard';
@@ -53,7 +53,7 @@ const Profile = ({ data }: IProps) => {
         <div>
           <div className='text-md md:text-2xl font-bold tracking-wider flex gap-2 items-center justify-center lowercase'>
             <span>{user.userName.replace(/\s+/g, '')} </span>
-            <GoVerified className='text-blue-400 md:text-xl text-md' />
+            
           </div>
           <p className='text-sm font-medium'> {user.userName}</p>
         </div>
